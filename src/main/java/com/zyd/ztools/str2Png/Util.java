@@ -1,3 +1,18 @@
+/**
+ * Copyright [2016-2017] [yadong.zhang]
+ * <p/>
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * <p/>
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * <p/>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.zyd.ztools.str2Png;
 
 import java.awt.AWTException;
@@ -114,7 +129,8 @@ public class Util {
 	 */
 	public static void robot() throws MalformedURLException, IOException, URISyntaxException, AWTException {
 		// 此方法仅适用于JdK1.6及以上版本
-		Desktop.getDesktop().browse(new URL("http://www.flyat.cc/simpleArticle/295744a0af6942fbbf3e4dffa898bd48").toURI());
+		Desktop.getDesktop()
+				.browse(new URL("http://www.flyat.cc/simpleArticle/295744a0af6942fbbf3e4dffa898bd48").toURI());
 		Robot robot = new Robot();
 		Dimension d = new Dimension(Toolkit.getDefaultToolkit().getScreenSize());
 		int width = (int) d.getWidth();
