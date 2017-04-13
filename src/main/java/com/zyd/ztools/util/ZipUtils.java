@@ -1,4 +1,4 @@
-package com.tools.util;
+package com.zyd.ztools.util;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

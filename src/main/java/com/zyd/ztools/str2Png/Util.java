@@ -1,4 +1,4 @@
-package com.tools.str2Png;
+package com.zyd.ztools.str2Png;
 
 import java.awt.AWTException;
 import java.awt.Desktop;
@@ -29,7 +29,7 @@ import javax.swing.SwingUtilities;
 
 import org.xml.sax.SAXException;
 
-import com.tools.util.FileUtil;
+import com.zyd.ztools.util.FileUtil;
 
 import gui.ava.html.image.generator.HtmlImageGenerator;
 
