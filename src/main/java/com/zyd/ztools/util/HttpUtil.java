@@ -17,8 +17,6 @@ package com.zyd.ztools.util;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
-import java.io.Closeable;
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
@@ -95,7 +93,7 @@ public class HttpUtil {
 			if (parameter != null) {
 				final OutputStream outputStream = connection.getOutputStream();
 				writeOutput(outputStream, parameter);
-				close(outputStream);
+				CloseableUtil.close(outputStream);
 			}
 
 			LOGGER.info("HttpUtil response: {} - {}", connection.getResponseCode(), connection.getResponseMessage());
@@ -147,21 +145,8 @@ public class HttpUtil {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			close(reader, is);
+			CloseableUtil.close(reader, is);
 		}
 		return content.toString();
-	}
-
-	public static void close(Closeable... closeables) {
-		if (closeables != null && closeables.length > 0) {
-			for (Closeable closeable : closeables) {
-				if (closeable != null) {
-					try {
-						closeable.close();
-					} catch (IOException e) {
-					}
-				}
-			}
-		}
 	}
 }
