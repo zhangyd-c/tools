@@ -21,11 +21,6 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>net.sf.cssbox</groupId>
-			<artifactId>cssbox</artifactId>
-			<version>4.12</version>
-		</dependency>
 		<!-- Logger 相关依赖 -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -66,6 +61,11 @@
 		    <groupId>commons-digester</groupId>
 		    <artifactId>commons-digester</artifactId>
 		    <version>1.8</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.cssbox</groupId>
+			<artifactId>cssbox</artifactId>
+			<version>4.12</version>
 		</dependency>
 		<dependency>
 		    <groupId>com.github.xuwei-k</groupId>

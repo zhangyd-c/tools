@@ -5,7 +5,7 @@
         <!-- encoders are assigned the type
              ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
         <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%class] %-5level - %msg%n</pattern>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%class:%line] %-5level - %msg%n</pattern>
            <!-- <pattern>%d{yyyy-MM-dd HH:mm:ss} [%level] - %m%n</pattern>-->
             <!--<pattern>%d{yyyy-MM-dd HH:mm:ss} [%class:%line] - %m%n</pattern>-->
             <charset>UTF-8</charset> <!-- 此处设置字符集 -->
@@ -19,7 +19,7 @@
     <logger name="java.sql.ResultSet" level="DEBUG" />
     <logger name="backend" level="DEBUG"/>-->
 
-    <root level="INFO">
+    <root level="ERROR">
         <appender-ref ref="STDOUT" />
     </root>
 </configuration>

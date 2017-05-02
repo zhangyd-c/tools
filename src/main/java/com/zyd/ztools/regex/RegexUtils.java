@@ -37,12 +37,12 @@ public class RegexUtils {
 	}
 
 	public static void main(String[] args) {
-		String param = "卧槽我很帅啊";
+		String param = "12.123";
 //		Matcher m = loadMatcher(param, RegexPatternEnum.CHINESE_REGEX);
 //		while (m.find()) {
 //			String result = m.group(0);
 //			System.out.println(result);
 //		}
-		System.out.println(exec(param, RegexPatternEnum.CHINESE_REGEX));
+		System.out.println(exec(param, RegexPatternEnum.DECIMALS_REGEX));
 	}
 }
